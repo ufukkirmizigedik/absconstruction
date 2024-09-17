@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absconstructions</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar homepage" data-aos="fade-down">
+    <div class="navbar-logo">
+        <!-- Buraya logo ekleyebilirsiniz -->
+        <img src="{% get_media_prefix %}img/logo_trans-2.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="product-page" data-aos="fade-up">
+    <!-- Ürün Sayfası Başlığı -->
+    <div class="product-page-header" data-aos="fade-right">
+        <h1>Optical glass<br>processing equipment</h1>
+    </div>
+
+    <!-- Ürün Detayları -->
+    <div class="product-details" data-aos="fade-up">
+        <!-- Medya Galeri -->
+        <div class="product-media-gallery" data-aos="zoom-in">
+            <img src="{% get_media_prefix %}img/process-equipment.jpg" alt="Optic Glass Image 1">
+        </div>
+
+        <!-- Teknik Özellikler -->
+        <div class="product-specs" data-aos="fade-left">
+            <h2>Description</h2>
+            <ul>This equipment is designed for the precise and efficient processing of optical glass. It is suitable for cutting, shaping, polishing, and coating optical glass with advanced technology.</ul>
+            <h2>Features and Benefits</h2>
+            <ul>
+                <li>High Precision: Ensures high precision in processing optical glass.</li>
+                <li>Automatic Control: User-friendly automatic control panel for easy operation.</li>
+                <li>Multiple Processing Functions: Capable of cutting, shaping, polishing, and coating in one machine.</li>
+                <li>Advanced Safety Features: Equipped with safety sensors and emergency stop buttons.</li>
+                <li>Energy Efficiency: Low energy consumption with high performance.</li>
+                <li>Durability: Made from durable materials for long-lasting use.</li>
+            </ul>
+            <h2>Applications</h2>
+            <ul>
+                <li>Optical Glass Production: Ideal for manufacturing lenses, prisms, and other optical glass elements.</li>
+                <li>Laboratory Work: Suitable for optical glass processing in research and development laboratories.</li>
+                <li>Industrial Applications: Suitable for industrial applications requiring high precision.</li>
+            </ul>
+        </div>
+
+        <!-- Eylem Çağrısı -->
+        <div class="product-cta" data-aos="fade-up">
+            <h2>Contact Us for More Information</h2>
+            <p>If you need more details or want to make a purchase, please reach out to us.</p>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content" data-aos="fade-in">
+        <p>&copy; 2024 Abscontructions. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 120,
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+
+</body>
+</html>

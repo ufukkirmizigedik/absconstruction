@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absconstructions</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar homepage" data-aos="fade-down">
+    <div class="navbar-logo">
+        <!-- Buraya logo ekleyebilirsiniz -->
+        <img src="{% get_media_prefix %}img/logo_trans-2.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="product-page" data-aos="fade-up">
+    <!-- Ürün Sayfası Başlığı -->
+    <div class="product-page-header" data-aos="fade-right">
+        <h1>Optical Instruments</h1>
+    </div>
+
+    <!-- Ürün Detayları -->
+    <div class="product-details" data-aos="fade-up">
+        <!-- Medya Galeri -->
+        <div class="product-media-gallery" data-aos="zoom-in">
+            <img src="{% get_media_prefix %}img/instruments-optik.jpg" alt="Optic Glass Image 1">
+        </div>
+
+        <!-- Teknik Özellikler -->
+        <div class="product-specs" data-aos="fade-left">
+            <h2>Description</h2>
+            <ul>Optical instruments are precision devices designed for various applications including measuring, imaging, and analyzing optical phenomena. They are used in scientific research, industrial applications, and medical diagnostics.</ul>
+            <h2>Features and Benefits</h2>
+            <ul>
+                <li>High Precision: Provides accurate measurements and imaging with minimal error.</li>
+                <li>Versatile Applications: Suitable for a wide range of applications including microscopy, spectroscopy, and imaging.</li>
+                <li>User-Friendly Interface: Intuitive controls and displays for ease of operation.</li>
+                <li>Advanced Optics: Equipped with high-quality lenses and optical components for clear and sharp images.</li>
+                <li>Durable Construction: Built with high-quality materials for long-term reliability.</li>
+                <li>Enhanced Sensitivity: Superior sensitivity and resolution for detailed observations.</li>
+            </ul>
+            <h2>Applications</h2>
+            <ul>
+                <li>Scientific Research: Ideal for use in laboratories for experiments and analysis.</li>
+                <li>Industrial Inspection: Used for quality control and precision measurement in manufacturing processes.</li>
+                <li>Medical Diagnostics: Utilized in medical imaging and diagnostic procedures.</li>
+                <li>Educational Purposes: Suitable for educational institutions for teaching and research.</li>
+            </ul>
+        </div>
+
+        <!-- Eylem Çağrısı -->
+        <div class="product-cta" data-aos="fade-up">
+            <h2>Contact Us for More Information</h2>
+            <p>If you need more details or want to make a purchase, please reach out to us.</p>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content" data-aos="fade-in">
+        <p>&copy; 2024 Abscontructions. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 120,
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+
+</body>
+</html>

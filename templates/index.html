@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absconstructions</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <!-- AOS Kütüphanesi için CSS -->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar homepage" data-aos="fade-down">
+    <div class="navbar-logo">
+        <img src="{% get_media_prefix %}img/logo_trans-2.png" alt="Logo" data-aos="zoom-in">
+    </div>
+    <div class="navbar-links" data-aos="fade-left">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="card-container">
+    <div class="card" data-aos="fade-up">
+        <h5 class="card-title">Optical Glass</h5>
+        <img src="{% get_media_prefix %}img/optik-cam-1.jpg" alt="Optical Glass">
+        <p>Optical glass is a high-precision material used in various advanced technologies, including scientific instruments. It offers exceptional clarity and accuracy, essential for lenses, prisms, and other optical components.</p>
+        <a href="/Optical_glass" class="btn-see-more">See More</a>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+        <h5 class="card-title">Optical Instruments</h5>
+        <img src="{% get_media_prefix %}img/optic-instruments-1.jpg" alt="Optical Instruments">
+        <p>Optical instruments are devices designed to enhance vision or measure optical properties. They include telescopes, microscopes, and lasers, crucial for scientific research and navigation. These instruments use advanced optics to provide precise measurements.</p>
+        <a href="/Optical_Instruments" class="btn-see-more">See More</a>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+        <h5 class="card-title">Optical Glass Processing Equipment</h5>
+        <img src="{% get_media_prefix %}img/optical-process-1.jpg" alt="Optical Glass Processing Equipment">
+        <p>Optical glass processing equipment consists of advanced machinery for shaping, grinding, and polishing optical glass. This equipment guarantees precise lens and component fabrication, essential for high-performance optical instruments.</p>
+        <a href="/Optical_glass_processing_equipment" class="btn-see-more">See More</a>
+    </div>
+</div>
+
+<footer data-aos="fade-up">
+    <div class="footer-content">
+        <p>&copy; 2024 Absconstructions. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- AOS Kütüphanesi için JavaScript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 120, // Animasyonun tetiklenmesi için gerekli kaydırma mesafesi
+        duration: 600, // Animasyonun süresi (ms cinsinden)
+        easing: 'ease-in-out', // Animasyon geçiş efekti
+        once: true // Animasyon sadece bir kez tetiklensin, sürekli tetiklenmesin
+    });
+</script>
+
+</body>
+</html>

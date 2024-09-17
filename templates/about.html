@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absconstructions</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+</head>
+<body>
+ <!-- AOS Kullanımı İçin -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+<nav class="navbar homepage">
+    <div class="navbar-logo">
+        <!-- Buraya logo ekleyebilirsiniz -->
+        <img src="{% get_media_prefix %}img/logo_trans-2.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+    
+</nav>
+
+<section id="about-us" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6 lg:px-8">
+        <div class="text-center mb-8" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-gray-900">About us</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Welcome to Absconstruction, where innovation meets excellence. As a leading provider in the field of optical technology, we specialize in sourcing and delivering the highest quality optical glass, optical instruments, and optical glass processing equipment from the world's most renowned and reliable manufacturers.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div data-aos="fade-right">
+                <h3 class="text-2xl font-semibold text-gray-900">Our Mission</h3>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    At Absconstruction, our mission is to bridge the gap between advanced optical technology and our valued customers. We pride ourselves on our ability to procure state-of-the-art optical products tailored to your specific needs, ensuring precision, performance, and reliability in every delivery.
+                </p>
+            </div>
+            <div data-aos="fade-left">
+                <h3 class="text-2xl font-semibold text-gray-900">Our Vision</h3>
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    We are building the future today by leading technology forward.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</body>
+</html>

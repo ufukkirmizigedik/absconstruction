@@ -1,0 +1,85 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absconstructions</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar homepage" data-aos="fade-down">
+    <div class="navbar-logo">
+        <img src="{% get_media_prefix %}img/logo_trans-2.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </div>
+</nav>
+
+<div class="product-page" data-aos="fade-up">
+    <!-- Ürün Sayfası Başlığı -->
+    <div class="product-page-header">
+        <h1>Optic Glass</h1>
+    </div>
+
+    <!-- Ürün Detayları -->
+    <div class="product-details">
+        <!-- Medya Galeri -->
+        <div class="product-media-gallery" data-aos="zoom-in">
+            <img src="{% get_media_prefix %}img/cam-optik.jpg" alt="Optic Glass Image 1">
+        </div>
+
+        <!-- Teknik Özellikler -->
+        <div class="product-specs" data-aos="fade-left">
+            <h2>Description</h2>
+            <ul>Optical glass is a high-precision material used for manufacturing optical components such as lenses, prisms, and mirrors. It is designed to meet the stringent requirements of optical performance, including clarity, refractive index, and durability.</ul>
+            <h2>Features and Benefits</h2>
+            <ul>
+                <li>High Optical Clarity: Superior transparency and minimal distortion for accurate optical performance.</li>
+                <li>Precise Refractive Index: Ensures optimal light transmission and focus.</li>
+                <li>Durable: Resistant to scratches and environmental factors.</li>
+                <li>Versatile Applications: Suitable for a wide range of optical devices and systems.</li>
+                <li>Customizable: Available in various shapes, sizes, and coatings to meet specific requirements.</li>
+            </ul>
+            <h2>Applications</h2>
+            <ul>
+                <li>Optical Instruments: Used in lenses, microscopes, and telescopes for precision measurement and imaging.</li>
+                <li>Photography: Essential in camera lenses for high-quality image capture.</li>
+                <li>Scientific Research: Utilized in research laboratories for experiments and analysis.</li>
+                <li>Medical Devices: Incorporated into optical components for diagnostic and imaging equipment.</li>
+            </ul>
+        </div>
+
+        <!-- Eylem Çağrısı -->
+        <div class="product-cta" data-aos="fade-up">
+            <h2>Contact Us for More Information</h2>
+            <p>If you need more details or want to make a purchase, please reach out to us.</p>
+            <a href="/contact">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Abscontructions. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 120,
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true
+    });
+</script>
+
+</body>
+</html>
