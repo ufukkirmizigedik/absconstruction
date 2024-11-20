@@ -4,8 +4,8 @@ html, body {
 }
 
 @font-face {
-    font-family: 'PlayfairDisplay';
-    src: url('/static/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-family: 'Roboto Light';
+    src: url('/static/fonts/Roboto-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -13,7 +13,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'PlayfairDisplay', serif;
+    font-family: 'Roboto Light', serif !important;
 }
 
 main {
